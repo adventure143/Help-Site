@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get In Touch</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Link to Font Awesome or similar for icons, or use SVG/PNG -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        /* Basic Styling for Concept */
+        body {
+            font-family: sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        h1 {
+            color: #333;
+            margin-bottom: 15px;
+        }
+        p {
+            color: #666;
+            margin-bottom: 30px;
+        }
+        .contact-options {
+            display: flex;
+            justify-content: center;
+            gap: 30px; /* Space between the two options */
+            flex-wrap: wrap; /* Allow stacking on small screens */
+        }
+        .option-card {
+            background-color: #f9f9f9;
+            padding: 25px;
+            border-radius: 8px;
+            width: 250px; /* Fixed width for cards */
+            text-align: center;
+            transition: transform 0.3s ease;
+            border: 1px solid #eee;
+        }
+        .option-card:hover {
+             transform: translateY(-5px);
+        }
+        .option-card i {
+            font-size: 40px; /* Icon size */
+            margin-bottom: 15px;
+            color: #0088cc; /* Telegram Default */
+        }
+         .option-card.whatsapp i {
+            color: #25D366; /* WhatsApp Default */
+        }
+        .option-card h2 {
+            font-size: 1.5em;
+            margin-top: 0;
+            color: #333;
+        }
+        .option-card p {
+            font-size: 1em;
+            margin-bottom: 20px;
+            color: #555;
+        }
+        .contact-button {
+            display: inline-block;
+            background-color: #0088cc; /* Telegram Blue */
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1em;
+            transition: background-color 0.3s ease;
+        }
+        .contact-button.whatsapp {
+            background-color: #25D366; /* WhatsApp Green */
+        }
+        .contact-button:hover {
+            opacity: 0.9;
+        }
+
+        /* Responsive Adjustments */
+        @media (max-width: 600px) {
+            .contact-options {
+                flex-direction: column; /* Stack cards */
+                align-items: center;
+                gap: 20px; /* Adjust gap when stacked */
+            }
+             .option-card {
+                width: 80%; /* Make cards wider on small screens */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Get In Touch</h1>
+        <p>Have questions about our apps? Need support or information about our Secured Fake ShareChat & Mute ShareChat Apps? Connect with us directly!</p>
+
+        <div class="contact-options">
+            <!-- Telegram Option -->
+            <div class="option-card telegram">
+                <i class="fab fa-telegram"></i> <!-- Telegram Icon (using Font Awesome) -->
+                <h2>Telegram</h2>
+                <p>@ks_admin_68</p>
+                <!-- Changed t.me to telegram.me as requested -->
+                <a href="https://telegram.me/ks_admin_68" class="contact-button" target="_blank">Message on Telegram</a>
+            </div>
+
+            <!-- WhatsApp Option -->
+            <div class="option-card whatsapp">
+                 <i class="fab fa-whatsapp"></i> <!-- WhatsApp Icon (using Font Awesome) -->
+                <h2>WhatsApp</h2>
+                <p>+91 9655 636477</p>
+                <!-- Use wa.me link for direct chat -->
+                <a href="https://wa.me/919655636477" class="contact-button whatsapp" target="_blank">Message on WhatsApp</a>
+            </div>
+        </div>
+
+        <!-- Optional: Add a small note -->
+        <!-- <p style="margin-top: 30px; font-size: 0.9em;">We aim to respond to all messages within 24 hours.</p> -->
+
+    </div>
+
+</body>
+</html>
